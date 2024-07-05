@@ -1,3 +1,4 @@
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,7 +11,8 @@ from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
 
 # castaways data==========================================================================
-ca_data = pd.read_csv(r"C:\Users\acheryl\Desktop\Clew Bay\castaways_compiled_data.csv")
+castaways_file = r"file_path" # download castaways_compiled_data.csv file 
+ca_data = pd.read_csv(castaways_file)
 
 ca_df = pd.DataFrame(ca_data)
 
@@ -34,7 +36,8 @@ ax.invert_zaxis()
 
 
 # exo sonde- map==========================================================================
-es_data = pd.read_csv(r"C:\Users\acheryl\Desktop\Clew Bay\exo_sonde.csv")
+exo_sonde_file = r"file_path" # download exo_sonde.csv file 
+es_data = pd.read_csv(exo_sonde_file)
 
 # Set up the plot with cartopy
 plt.figure(figsize=(10, 8))
