@@ -9,7 +9,6 @@ from scipy.stats import f_oneway
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
 
-
 # castaways data==========================================================================
 castaways_file = r"file_path" # download castaways_compiled_data.csv file 
 ca_data = pd.read_csv(castaways_file)
@@ -32,7 +31,7 @@ ax.set_xlabel('Latitude')
 ax.set_ylabel('Longitude')
 ax.set_zlabel('Depth (m)')
 ax.invert_zaxis()
-# plt.show()
+plt.show()
 
 
 # exo sonde- map==========================================================================
@@ -57,7 +56,7 @@ plt.colorbar(sc, label='Temperature')
 plt.title('Temperature Distribution Heatmap Clew Bay')
 plt.xlabel('Longitude')
 plt.ylabel('Latitude')
-# plt.show()
+plt.show()
 
 
 # exo sonde- boxplot==========================================================================
